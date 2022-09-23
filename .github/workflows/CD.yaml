@@ -15,8 +15,8 @@ jobs:
         run: npm i
       - name: Run tests 
         run: npm run test
-        
-vercel:
+
+  vercel:
     needs: [test]
     name: "Deploy front-end" 
     runs-on: ubuntu-latest
